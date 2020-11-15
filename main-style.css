@@ -1,0 +1,364 @@
+html body
+{
+	margin: 0 ;
+	padding: 0 ;
+	background-color: #fff ;
+}
+.main-cont
+{
+	width: 100% ;
+	height: 100vh ;
+	background: url(file:///C:/Users/FDC/Desktop/nextgentech/muk-01.svg) no-repeat center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.main-cont .main-cont-content 
+{
+	margin-top: 10rem ;
+	width : 100% ;
+}
+
+.main-cont .main-cont-content .main-logo-div
+{
+	background-color: transparent !important ;
+	opacity: 1
+}
+.main-cont .main-cont-content .main-cont-header
+{
+	padding-left: 10rem ;
+}
+.main-cont .main-cont-content .main-cont-header-text
+{
+	color: #565656 ;
+	user-select: none ;
+	text-transform: capitalize; 
+	font-weight: 350; ;
+	font-size: 55px ;
+	text-shadow: 0 0.125rem 0.25rem #565656 !important;
+}
+.main-cont .main-cont-content .lead-to
+{
+	font-weight: 400 ;
+	color: #5b0909;
+	text-transform: capitalize;
+}
+.main-cont .main-cont-content .lead
+{
+	color: #8e8e8e ;
+	font-weight: 400 ;
+}
+.main-cont .main-cont-content .main-cont-header .main-cont-header-btn
+{
+	margin-left: 1rem;
+}
+.main-cont .main-cont-content .main-cont-header .main-cont-header-btn .btn
+{
+	background-color : #565656 ;
+	color: #fff;
+	border-radius: 20px ;
+	padding: 0.5rem 1rem ;
+	letter-spacing: 1px
+}
+/* ////////////// */
+.navbar
+{
+	background-color: transparent !important ;
+	height: 80px ;
+}
+.navbar-1
+{
+	height: 80px ;
+	padding: 8px 16px ;
+	background-color: #fff !important ; 
+	visibility: hidden;
+
+}
+.navbar-1 i
+{
+	position: absolute;
+	top: 20px ;
+	left: 10px ;
+	color: #5b0909;
+	font-size: 21px ;
+	cursor: pointer;
+	padding: 10px ;
+	display: none;
+}
+.navbar i 
+{
+	position: absolute;
+	top: 20px ;
+	left: 10px ;
+	color: #315653;
+	font-size: 21px ;
+	cursor: pointer;
+	padding: 10px ;
+	display: none;
+}
+.navbar-1 .navbar-brand .brand-name
+{
+	color: #135653 ;
+	font-weight: 600 ;
+	font-size: 25px ;
+	display: none;
+	user-select: none;
+}
+.navbar-1 .navbar-brand .logo
+{
+	margin-left: 100px ;
+	width: 60px ; 
+	height: 60px ;
+}
+.navbar .navbar-brand .brand-name 
+{
+	display: none ;
+}
+.navbar .navbar-brand .logo 
+{
+	margin-left: 100px ;
+	width: 80px ;
+	height: 80px ;
+}
+.navbar .navbar-content .navbar-nav , .navbar-1 .navbar-content .navbar-nav
+{
+	position: absolute;
+   	right : 100px ;
+   	top: 30px ;
+}
+.navbar-1 .navbar-nav .nav-link
+{
+	color: #135653 !important;
+	font-weight: 600 ;
+	opacity: 0.7 ;
+}
+.navbar-1 .navbar-nav .nav-link:hover
+{
+	opacity: 0.9 ;
+}
+.sidebar
+{
+	position: fixed;
+	left: -100% ;
+	width: 100% ;
+	min-height: 100vh ;
+	background-color: #fff ;
+	overflow-x: scroll;
+}
+.sidebar .sidebar-content
+{
+	padding-left: 0;
+}
+.sidebar .sidebar-content .sidebar-nav
+{
+	padding-left: 20px  ;
+	padding-right: 10px  ;
+	list-style-type: none ;
+}
+.sidebar .sidebar-content .sidebar-nav .sidebar-item
+{
+	padding: 20px 0 ;
+	border-bottom: 1px solid #8e8e8e ;
+	border-width: 50% ;
+	margin-top: 10px
+}
+.sidebar .sidebar-content .sidebar-nav .sidebar-item .sidebar-link
+{
+	color: #315653 ;
+	text-decoration: none ;
+	font-size: 15px ;
+	border-width: 50% ;
+	padding: 20px ;
+	padding-right: 100px ;
+}
+.sidebar .sidebar-content .sidebar-nav .sidebar-item .sidebar-link:hover
+{
+	margin-left: 20px ;
+	transition: 0.5s
+}
+.sidebar .sidebar-content .sidebar-nav .sidebar-item img
+{
+	width: 30px ; 
+	height: 30px ;
+	margin-right: 1rem
+}
+.act
+{
+	opacity: 1 !important ;
+	font-weight: 700 ;
+}
+@media (max-width: 860px)
+{
+	.navbar i , .navbar-1 i 
+	{
+		display: block ;
+	}
+	.navbar , .navbar-1
+	{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	.navbar .navbar-content , .navbar-1 .navbar-content
+	{
+		display: none ;
+	}
+	.navbar .navbar-brand .logo , .navbar-1 .navbar-brand .logo
+	{
+		margin-left: 0px ;
+	}
+	.sidebar
+	{
+		top: 80px;
+		z-index: 999 ;
+	}
+	.main-cont .main-cont-content .main-cont-header , .main-cont .main-cont-content .main-cont-header .main-cont-header-img
+	{
+		padding-left: 1rem ;
+		margin-top: 1.5rem;
+	}
+}
+
+/*.sidebar .navbar-nav .sidebar-items .sidebar-item
+{
+	list-style-type: none ;
+	
+	border-bottom: 1px solid rgb(255, 255, 255, 0.2) ;
+	border-width: 50% ;
+	margin: 20px 10px ;
+}
+.sidebar .navbar-nav .sidebar-items .sidebar-item .sidebar-link
+{
+	color: rgb(255, 255, 255, 0.5) ;
+	padding: 20px ;
+}
+.sidebar .sidebar-item ul .act
+{
+	color : #fff;
+}*/
+
+/* ////////////// */
+.up
+{
+	color : #fff;
+	background-color: #315653 ;
+	position: fixed;
+	right: 20px ;
+	bottom: 20px ;
+	padding: 5px 10px;
+	font-size: 25px ;
+	display: none;
+}
+.main-jum .jumbotron
+{
+	margin-top: 10% ;
+	background-color: rgb(255, 255, 255, 0.2);
+	display: none;
+}
+.main-jum .jumbotron .display-4
+{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700 ;
+	text-shadow: 5px 5px 5px #315653 ;
+	user-select: none ;
+}
+.main-jum .jumbotron hr
+{
+	max-width: 200px ; 
+	background-color: #315653 ;
+	height: 1px;
+}
+.main-jum .jumbotron .lead 
+{
+	font-weight: 400 ;
+}
+.main-jum .jumbotron .lead-to
+{
+	font-weight: 500 ;
+	color: #5b0909;
+	text-transform: capitalize;
+}
+.main-jum .jumbotron small 
+{
+	color: #fff;
+	font-weight: bold ;
+}
+@media (max-width: 900px)
+{
+	.main-jum .jumbotron
+	{
+		margin-top: 15% ;
+	}
+	.main-cont .main-cont-content 
+	{
+		margin-top: 5rem ;
+	}
+}
+@media (max-width: 500px)
+{
+	.main-jum .jumbotron
+	{
+		margin-top: 45% ;
+	}
+	.main-jum .jumbotron h1
+	{
+		font-size: 30px
+	}
+}
+.our-ser
+{/*
+	width: 100% ;
+	height: 100vh ;
+	background: url(file:///C:/Users/FDC/Desktop/nextgentech/cc-01.svg) no-repeat center center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center center;*/
+}
+.our-ser .container .our-ser-title p
+{
+	font-size: 20px ;
+	color: #8e8e8e ;
+}
+.our-ser .container .our-ser-cds
+{
+	background-color: #fff ;
+	border-radius: 30px ;
+	padding: 3rem ;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important ; 
+}
+.our-ser .container .our-ser-cds:hover
+{
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+	transition: 0.3s ;
+}
+.our-ser .container .our-ser-cds .our-ser-cds-logo
+{
+	width: 180px
+}
+.our-ser .container .our-ser-cds .our-ser-cds-title
+{
+	color: #565656;
+	letter-spacing: 5px  ;
+}
+.our-ser .container .our-ser-cds .our-ser-cds-par
+{
+	color: #8e8e8e;
+	font-size: 17px ;
+	padding: 20px ;
+}
+@media (max-width: 600px)
+{
+	.our-ser .container .our-ser-cds
+	{
+		padding: 2rem;
+		margin-bottom: 2rem
+	}
+}
